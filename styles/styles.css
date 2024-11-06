@@ -3,12 +3,13 @@ main {
 }
 
 nav {
-    background-color: darkblue;
+    background-color: rgb(232, 255, 247);
     padding: 10px;
+    border-bottom: 3px solid black;
 }
 
 nav a {
-    color: white;
+    color: black;
     display: block;
     padding: 20px;
 }
@@ -34,7 +35,7 @@ aside {
     margin: 1rem;
     border: 1px solid black;
     padding: 1rem;
-    background-color: rgb(173, 255, 228);
+    background-color: rgb(232, 255, 247);
     color: black;
     text-align: center;
 }

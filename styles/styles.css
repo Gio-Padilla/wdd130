@@ -9,7 +9,7 @@
 }
 
 main {
-    max-width: 500px;
+    max-width: 800px;
 }
 
 nav {
@@ -71,8 +71,8 @@ ul li {
 }
 
 #temples {
-    padding-top: 2rem;
     padding-left: 1rem;
+    clear: both;
 }
 
 /* Class Selectors */

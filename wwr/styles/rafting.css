@@ -38,8 +38,6 @@ p {
     display: block;
     width: 100%;
     height: auto;
-    -webkit-mask-image: linear-gradient(to top, transparent 0px, black 100px);
-    mask-image: linear-gradient(to top, transparent 0px, black 100px);
 }
 
 .hero h1 {

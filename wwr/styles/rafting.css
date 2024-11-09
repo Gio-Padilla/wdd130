@@ -3,8 +3,6 @@
     --secondary-color: rgb(132, 192, 198);
     --accent1-color: rgb(159, 183, 185);
     --accent2-color: rgb(242, 226, 210);
-    --heading-font: "Roboto", sans-serif;
-    --text-font: "Host Grotesk", sans-serif;
 }
 
 * {
@@ -15,7 +13,7 @@
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: var(--heading-font);
+    font-family: "Roboto", sans-serif;
 }
 
 .sociallinks {
@@ -23,7 +21,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    font-family: var(--text-font);
+    font-family: "Host Grotesk", sans-serif;
 }
 
 .hero {

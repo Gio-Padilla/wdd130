@@ -3,18 +3,24 @@
     --secondary-color: rgb(132, 192, 198);
     --accent1-color: rgb(159, 183, 185);
     --accent2-color: rgb(242, 226, 210);
+    --max-page: 2000px;
+    --min-page-width: 800px;
 }
 
 * {
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
-    max-width: 2000px;
+    max-width: var(--max-page);
 }
 
 body {
     justify-content: center;
     align-items: center;
+}
+
+.hero, .adventure, .history, footer {
+    margin: 1rem 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -29,9 +35,41 @@ p {
     font-family: "Host Grotesk", sans-serif;
 }
 
+header {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--accent2-color)
+}
+
+header img {
+    justify-self: right;
+    max-width: 200px;
+    width: 100%;
+}
+
+header nav {
+    padding: 1rem;
+    max-width: 800px;
+    display: flex;
+    justify-content: start;
+    font-size: larger;
+}
+
+header nav a {
+    border: 1px solid black;
+    padding: 1rem;
+    width: 10rem;
+    text-align: center;
+    text-decoration: none;
+}
+
 .hero {
+    border: 1px solid black;
     position: relative;
-    min-width: 800px;
+    min-width: var(--min-page-width);
 }
 
 #about-back {
@@ -72,4 +110,70 @@ p {
     width: 200px;
     max-width: 50%;
     margin-left: 1rem;
+}
+
+.history {
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    border: 1px solid black;
+    min-width: var(--min-page-width);
+}
+
+.history h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    border: 1px solid black;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    background-color: var(--accent2-color);
+    min-width: var(--min-page-width);
+}
+
+.adventure h2 {
+    grid-column-start: span 5;
+    justify-self: center;
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+}
+.adventure figure img {
+    max-width: 80%;
+}
+
+.adventure figure {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accent2-color);
+    min-width: var(--min-page-width);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid black;
+}
+
+footer p {
+    grid-column-start: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+footer nav {
+    grid-column-start: 3;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100px;
+}
+
+footer nav a img{
+    padding: 0.5rem;
+    width: 4rem;
+    margin: 0px 1rem;
 }

@@ -41,7 +41,8 @@ header {
     grid-template-columns: 1fr 1fr 2fr;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--accent2-color)
+    background-color: var(--accent2-color);
+    min-width: var(--min-page-width);
 }
 
 header img {

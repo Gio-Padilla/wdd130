@@ -8,8 +8,8 @@
     --main-color: rgb(255, 255, 232);
 }
 
-header, .grid, footer {
-    max-width: 840PX;
+header, footer {
+    max-width: 840px;
 }
 
 main {
@@ -102,6 +102,7 @@ ul li {
 }
 
 .grid {
+    max-width: 840px;
     display: grid;
     align-items: center;
 }

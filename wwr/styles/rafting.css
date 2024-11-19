@@ -116,12 +116,24 @@ header nav a {
 
 .history {
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
 }
 
 .history h2 {
     text-align: center;
     text-decoration: underline;
     padding-bottom: 0.5rem;
+    grid-column-start: span 3;
+}
+
+.history img {
+    width: 300px;
+    height: auto;
+}
+
+.history p {
+    margin: 0 2rem;
 }
 
 .adventure {

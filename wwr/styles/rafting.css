@@ -128,7 +128,7 @@ header nav a {
 }
 
 .history img {
-    width: 300px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -181,5 +181,5 @@ footer nav {
 }
 
 footer nav a {
-    width: 4rem;
+    width: 60px;
 }

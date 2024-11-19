@@ -1,8 +1,8 @@
 :root {
-    --primary-color: rgb(7, 96, 116);
-    --secondary-color: rgb(132, 192, 198);
-    --accent1-color: rgb(159, 183, 185);
-    --accent2-color: rgb(242, 226, 210);
+    --primary-color: #DEFFF4;
+    --secondary-color: #294534;
+    --accent1-color: #e2e4ff;
+    --accent2-color: #2E394A;
     --max-page: 2000px;
     --min-page-width: 800px;
 }
@@ -11,7 +11,6 @@
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
-    max-width: var(--max-page);
 }
 
 body {
@@ -19,12 +18,17 @@ body {
     align-items: center;
 }
 
-.hero, .adventure, .history, footer {
-    margin: 1rem 0;
+.hero, .adventure, .history, footer, header {
+    margin: 1rem auto;
+    max-width: var(--max-page);
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    min-width: var(--min-page-width);
 }
 
 h1, h2, h3, h4, h5 {
     font-family: "Roboto", sans-serif;
+    color: var(--secondary-color);
 }
 
 .sociallinks {
@@ -36,13 +40,10 @@ p {
 }
 
 header {
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--accent2-color);
-    min-width: var(--min-page-width);
 }
 
 header img {
@@ -70,9 +71,7 @@ header nav a {
 }
 
 .hero {
-    border: 1px solid black;
     position: relative;
-    min-width: var(--min-page-width);
 }
 
 #about-back {
@@ -82,7 +81,7 @@ header nav a {
 }
 
 .hero h1 {
-    color: white;
+    color: var(--primary-color);
     position: absolute;
     top: 2%;
     text-align: center;
@@ -116,10 +115,7 @@ header nav a {
 }
 
 .history {
-    background-color: var(--accent2-color);
     padding: 1rem;
-    border: 1px solid black;
-    min-width: var(--min-page-width);
 }
 
 .history h2 {
@@ -132,11 +128,8 @@ header nav a {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
-    border: 1px solid black;
     padding: 0.5rem;
     padding-bottom: 1rem;
-    background-color: var(--accent2-color);
-    min-width: var(--min-page-width);
 }
 
 .adventure h2 {
@@ -146,7 +139,7 @@ header nav a {
     padding-bottom: 0.5rem;
 }
 .adventure figure img {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .adventure figure {
@@ -154,29 +147,27 @@ header nav a {
 }
 
 footer {
-    background-color: var(--accent2-color);
-    min-width: var(--min-page-width);
+    padding: 0.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid black;
+    text-align: center;
 }
 
 footer p {
     grid-column-start: 2;
-    justify-self: center;
     align-self: center;
 }
 
 footer nav {
+    padding-right: 200px;
     grid-column-start: 3;
-    justify-self: center;
     display: grid;
+    justify-self: center;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
     max-width: 100px;
 }
 
-footer nav a img{
-    padding: 0.5rem;
+footer nav a {
     width: 4rem;
-    margin: 0px 1rem;
 }

@@ -243,6 +243,7 @@ footer nav a {
     height: 5rem;
     font-size: 1.3em;
     padding: 0.5rem;
+    resize: vertical;
 }
 
 input[type="checkbox"], input[type="radio"] {

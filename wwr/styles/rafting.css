@@ -245,10 +245,6 @@ footer nav a {
     padding: 0.5rem;
 }
 
-.request-type {
-    display: grid;
-}
-
 input[type="checkbox"], input[type="radio"] {
     width: 20px;
     height: 20px;
@@ -267,6 +263,10 @@ input[type="checkbox"], input[type="radio"] {
 .contact-form input {
     padding: 0.3rem;
     font-size: 1.2em;
+}
+
+.contact-form fieldset {
+    padding: 0.5rem;
 }
 
 .contact-form button:hover {

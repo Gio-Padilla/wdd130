@@ -215,7 +215,7 @@ footer nav a {
     grid-column-start: span 4;
 }
 
-.employees div {
+.employees figure {
     display: grid;
     align-items: center;
     justify-content: center;

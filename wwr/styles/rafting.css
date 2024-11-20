@@ -243,6 +243,7 @@ footer nav a {
     height: 5rem;
     font-size: 1.3em;
     padding: 0.5rem;
+    /* Make sure this part was updated. */
     resize: vertical;
 }
 

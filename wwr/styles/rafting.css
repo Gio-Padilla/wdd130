@@ -223,8 +223,10 @@ footer nav a {
 }
 
 .employees img {
-    width: 180px;
+    width: 300px;
+    max-width: 100%;
     height: auto;
+    padding: 0 1rem;
 }
 
 .contact-form {
@@ -243,7 +245,6 @@ footer nav a {
     height: 5rem;
     font-size: 1.3em;
     padding: 0.5rem;
-    /* Make sure this part was updated. */
     resize: vertical;
 }
 

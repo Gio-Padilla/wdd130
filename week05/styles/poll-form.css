@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header, body, footer {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    display: block;
+    margin: 1rem auto 0 auto;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+button:hover {
+  background-color: rgb(188, 207, 188);
+}
+
+footer {
+  width: 650px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+}
+
+.contact {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.questions {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+form {
+    padding: 1rem;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 20px;
+}

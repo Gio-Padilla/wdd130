@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 
-.hero, .adventure, .history, footer, header {
+.box-it {
     margin: 1rem auto;
     max-width: var(--max-page);
     border: 5px solid var(--secondary-color);
@@ -180,4 +180,96 @@ footer nav {
 
 footer nav a {
     width: 60px;
+}
+
+.company-info {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.company-info h2 {
+    grid-column-start: span 2;
+    margin-bottom: 1rem;
+}
+
+.company-info h3 {
+    margin-top: 1rem;
+}
+
+.company-info iframe {
+    justify-self: center;
+    border: 5px solid var(--secondary-color);
+    width: 80%;
+    height: 400px
+}
+
+.employees {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.employees h2 {
+    margin-bottom: 1rem;
+    grid-column-start: span 4;
+}
+
+.employees div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.employees img {
+    width: 180px;
+    height: auto;
+}
+
+.contact-form {
+    padding: 1rem;
+    font-family: "Host Grotesk", sans-serif;;
+}
+
+.contact-form form {
+    padding: 1rem;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact-form form textarea {
+    width: 100%;
+    height: 5rem;
+    font-size: 1.3em;
+    padding: 0.5rem;
+}
+
+.request-type {
+    display: grid;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.contact-form button {
+    border: 2px solid black;
+    background-color: var(--accent2-color);
+    font-size: 1.5em;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form input {
+    padding: 0.3rem;
+    font-size: 1.2em;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
 }
